@@ -320,7 +320,7 @@ function startGulp(name, opts) {
   });
 
   gulp.task('release:push', function(cb) {
-    git.push('bitpay', 'master', {
+    git.push('actinium', 'master', {
       args: ''
     }, cb);
   });
@@ -329,7 +329,7 @@ function startGulp(name, opts) {
     var pjson = require('../../package.json');
     var name = 'v' + pjson.version;
     git.tag(name, 'Release ' + name, function() {
-      git.push('bitpay', name, cb);
+      git.push('actinium', name, cb);
     });
   });
 
@@ -352,9 +352,9 @@ function startGulp(name, opts) {
       bumper,
       // build browser files
       browser ? 'browser' : 'noop',
-      // Commit 
+      // Commit
       'release:build-commit',
-      // Run git push bitpay $VERSION
+      // Run git push actinium $VERSION
       'release:push-tag',
       // Run npm publish
       'release:publish',
