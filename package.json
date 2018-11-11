@@ -1,5 +1,5 @@
 {
-  "name": "acmcore-build",
+  "name": "dogecore-build",
   "version": "0.9.0",
   "description": "A helper for common tasks to build bitcore modules'",
   "main": "index.js",
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Actinium-project/acmcore-build"
+    "url": "git://github.com/dogecash-project/dogecore-build"
   },
   "keywords": [
-    "acmcore"
+    "dogecore"
   ],
   "contributors": [
     {
@@ -37,9 +37,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Actinium-project/acmcore-build/issues"
+    "url": "https://github.com/dogecash/dogecore-build/issues"
   },
-  "homepage": "https://github.com/Actinium-project/acmcore-build",
+  "homepage": "https://github.com/dogecash/dogecore-build",
   "dependencies": {
     "brfs": "^1.4.3",
     "browserify": "^13.1.1",
